@@ -1,25 +1,196 @@
+/* Main background and font */
+.main-bg {
+  background: linear-gradient(135deg, #0a0610 0%, #1a093e 60%, #12062a 100%);
+  color: #e5e1ef;
+  min-height: 100vh;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #e5e1ef;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.converter-section {
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #12062a 0%, #1a093e 100%);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px -3px rgba(10,6,16,0.32), 0 4px 12px -4px rgba(26,9,62,0.22);
+  backdrop-filter: blur(4px);
+}
+
+.converter-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .converter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #a18acb;
+}
+
+.input-select, .input-field {
+  width: 90%;
+  background: #18102a;
+  border: 1px solid #23124b;
+  border-radius: 7px;
+  padding: 0.5rem 0.75rem;
+  color: #e5e1ef;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.input-select:focus, .input-field:focus {
+  box-shadow: 0 0 0 2px #6d4ca4;
+  border: 1.5px solid #6d4ca4;
+}
+.input-group {
+  margin-top: 1rem;
+}
+
 #convertBtn {
   max-width: 200px;
-  margin: 20px auto;
+  margin: 1.5rem auto 0 auto;
   display: block;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: white;
+  background: linear-gradient(135deg, #6d4ca4 0%, #23124b 100%);
+  color: #e5e1ef;
   border: none;
-  border-radius: 6px;
+  border-radius: 7px;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 4px 12px rgba(26,9,62,0.22);
   transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
-
 #convertBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
-  background: linear-gradient(135deg, #1e40af, #2563eb);
+  box-shadow: 0 6px 16px rgba(26,9,62,0.32);
+  background: linear-gradient(135deg, #8a6bbd 0%, #23124b 100%);
 }
-
 #convertBtn:active {
   transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 2px 4px rgba(26,9,62,0.22);
+}
+
+.games-section {
+  margin-top: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #e5e1ef;
+}
+.games-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .games-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .games-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.game-card, .tip-card {
+  background: linear-gradient(135deg, #18102a 0%, #23124b 100%);
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(10,6,16,0.18);
+}
+.game-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #8a6bbd;
+}
+.game-desc {
+  color: #e5e1ef;
+  margin-top: 0.5rem;
+}
+
+.tips-section {
+  margin-top: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .tips-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.tip-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #8a6bbd;
+}
+.tip-desc {
+  color: #a18acb;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0 0.5rem 0;
+}
+.tip-list {
+  color: #e5e1ef;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 4rem auto 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #a18acb;
+}
+.footer-desc {
+  margin-top: 0.5rem;
+  color: #a18acb;
 } 

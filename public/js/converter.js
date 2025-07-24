@@ -92,9 +92,9 @@ function populateGameDropdowns() {
 function populateGameList() {
     console.log('Populating game list');
     gameList.innerHTML = Object.entries(games).map(([id, game]) => `
-        <div class="bg-gray-800 p-4 rounded-lg">
-            <h3 class="text-xl font-bold text-gaming-blue">${game.name}</h3>
-            <p class="text-gray-300 mt-2">${game.description}</p>
+        <div class="game-card">
+            <h3 class="game-title">${game.name}</h3>
+            <p class="game-desc">${game.description}</p>
         </div>
     `).join('');
     console.log('Game list populated');
