@@ -52,6 +52,8 @@ const games = {
     }
 };
 
+console.log('Converter.js loaded');
+
 // DOM Elements
 const sourceGameSelect = document.getElementById('sourceGame');
 const targetGameSelect = document.getElementById('targetGame');
@@ -60,24 +62,37 @@ const targetSensInput = document.getElementById('targetSens');
 const convertBtn = document.getElementById('convertBtn');
 const gameList = document.getElementById('gameList');
 
+console.log('DOM Elements:', {
+    sourceGameSelect,
+    targetGameSelect,
+    sourceSensInput,
+    targetSensInput,
+    convertBtn,
+    gameList
+});
+
 // Populate game dropdowns
 function populateGameDropdowns() {
+    console.log('Populating dropdowns');
     const gameOptions = Object.entries(games).map(([id, game]) => {
         return `<option value="${id}">${game.name}</option>`;
     }).join('');
 
     sourceGameSelect.innerHTML = '<option value="">Select Game</option>' + gameOptions;
     targetGameSelect.innerHTML = '<option value="">Select Game</option>' + gameOptions;
+    console.log('Dropdowns populated');
 }
 
 // Populate game list
 function populateGameList() {
+    console.log('Populating game list');
     gameList.innerHTML = Object.entries(games).map(([id, game]) => `
         <div class="bg-gray-800 p-4 rounded-lg">
             <h3 class="text-xl font-bold text-gaming-blue">${game.name}</h3>
             <p class="text-gray-300 mt-2">${game.description}</p>
         </div>
     `).join('');
+    console.log('Game list populated');
 }
 
 // Convert sensitivity between games
@@ -85,6 +100,12 @@ function convertSensitivity() {
     const sourceGame = sourceGameSelect.value;
     const targetGame = targetGameSelect.value;
     const sourceSens = parseFloat(sourceSensInput.value);
+
+    console.log('Converting sensitivity:', {
+        sourceGame,
+        targetGame,
+        sourceSens
+    });
 
     if (!sourceGame || !targetGame || !sourceSens) {
         alert('Please select both games and enter a valid sensitivity');
@@ -99,6 +120,7 @@ function convertSensitivity() {
     
     // Display result rounded to 3 decimal places
     targetSensInput.value = Math.round(targetSens * 1000) / 1000;
+    console.log('Conversion complete:', targetSensInput.value);
 }
 
 // Event Listeners
@@ -108,8 +130,11 @@ sourceSensInput.addEventListener('keypress', (e) => {
 });
 
 // Initialize
-populateGameDropdowns();
-populateGameList();
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded');
+    populateGameDropdowns();
+    populateGameList();
+});
 
 // Add input validation
 sourceSensInput.addEventListener('input', (e) => {
