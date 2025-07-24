@@ -14,6 +14,7 @@ A web-based tool to convert mouse sensitivity settings between popular shooter g
 - Battlefield 2042
 - PUBG: Battlegrounds
 - Destiny 2
+- Grand Theft Auto V
 
 ## Features
 
