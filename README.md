@@ -34,10 +34,6 @@ The converter uses the cm/360° method to ensure accurate sensitivity conversion
 - **Backend**: Node.js with Express for serving static files
 - **No database required**: All conversion factors are stored in the frontend code
 
-## Contributing
-
-Feel free to open issues or submit pull requests if you find any bugs or want to add support for more games.
-
 ## License
 
 MIT License - feel free to use this project however you'd like! 
