@@ -49,6 +49,11 @@ const games = {
         name: 'Destiny 2',
         description: 'MMO shooter by Bungie',
         baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
+    },
+    'gtav': {
+        name: 'Grand Theft Auto V',
+        description: 'Open world action game by Rockstar Games',
+        baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
     }
 };
 
