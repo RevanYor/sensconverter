@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Sens Converter</title>
+    <title>Gaming Sensitivity Converter</title>
     <link href="css/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white min-h-screen font-['Roboto']">
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold text-center mb-8 text-gaming-blue">Simple Sens Converter</h1>
+        <h1 class="text-4xl font-bold text-center mb-8 text-gaming-blue">Gaming Sensitivity Converter</h1>
         
-        <div class="max-w-2xl mx-auto bg-gray-800 rounded-lg p-6 shadow-lg">
+        <div class="max-w-3xl mx-auto bg-gray-800/50 rounded-lg p-6 shadow-lg backdrop-blur-sm">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Source Game -->
                 <div>
@@ -44,16 +44,69 @@
         </div>
 
         <!-- Game List -->
-        <div class="mt-8 max-w-2xl mx-auto">
+        <div class="mt-8 max-w-3xl mx-auto">
             <h2 class="text-2xl font-bold mb-4">Supported Games</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="gameList">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="gameList">
                 <!-- Game list will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Sensitivity Tips Section -->
+        <div class="mt-16 max-w-3xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Finding Your Perfect Sensitivity</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- PSA Method -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-bold text-gaming-blue">PSA Method</h3>
+                    <p class="text-gray-300 mt-2 mb-4">Perfect Sensitivity Approximation - A systematic approach</p>
+                    <ol class="space-y-2 text-gray-300">
+                        <li>1. Start with a very high sensitivity (where you overaim)</li>
+                        <li>2. Then try a very low sensitivity (where you underaim)</li>
+                        <li>3. Pick a sensitivity in the middle of these two</li>
+                        <li>4. Repeat until you find your comfortable range</li>
+                        <li>5. Fine-tune within that range</li>
+                    </ol>
+                </div>
+
+                <!-- DPI Guide -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-bold text-gaming-blue">DPI Settings</h3>
+                    <p class="text-gray-300 mt-2 mb-4">Recommended range: 400 - 1600 DPI</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Keep the same DPI across all games</li>
+                        <li>• Use your mouse's native DPI steps</li>
+                    </ul>
+                </div>
+
+                <!-- General Tips -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-bold text-gaming-blue">Key Guidelines</h3>
+                    <p class="text-gray-300 mt-2 mb-4">Essential tips for better aim consistency</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• One full 360° turn should take about 30-40cm of mouse movement</li>
+                        <li>• Lower sensitivity means better precision but requires more arm movement</li>
+                        <li>• Consider your available mousepad space</li>
+                        <li>• Stick with your chosen sensitivity for at least a week</li>
+                    </ul>
+                </div>
+
+                <!-- Common Mistakes -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-bold text-gaming-blue">Common Mistakes</h3>
+                    <p class="text-gray-300 mt-2 mb-4">Avoid these common sensitivity pitfalls</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Changing sensitivity too frequently</li>
+                        <li>• Copying pro players exactly</li>
+                        <li>• Using different sensitivities across similar games</li>
+                        <li>• Not considering your natural arm movement range</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        // Add this to check if the script is loading
         console.log('HTML loaded');
     </script>
     <script src="js/converter.js"></script>
