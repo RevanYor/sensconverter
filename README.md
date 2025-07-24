@@ -30,10 +30,10 @@ The converter uses the cm/360° method to ensure accurate sensitivity conversion
 
 ## Technical Details
 
-- **Frontend**: Vanilla JavaScript with Tailwind CSS for styling
+- **Frontend**: Vanilla JavaScript with plain CSS for styling
 - **Backend**: Node.js with Express for serving static files
 - **No database required**: All conversion factors are stored in the frontend code
 
 ## License
 
-MIT License - feel free to use this project however you'd like! 
+MIT License 
