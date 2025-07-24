@@ -1,28 +1,28 @@
 # Gaming Sensitivity Converter
 
-A web-based tool to convert mouse sensitivity settings between popular shooter games. Built with vanilla JavaScript, Tailwind CSS, and Node.js.
+A web-based tool to convert mouse sensitivity settings between popular shooter games. Built with vanilla JavaScript, plain CSS, and Node.js.
 
 ## Supported Games
 
-- VALORANT
-- Counter-Strike 2
-- Apex Legends
-- Overwatch 2
-- Rainbow Six Siege
-- Fortnite
-- Call of Duty: Warzone
-- Battlefield 2042
-- PUBG: Battlegrounds
-- Destiny 2
-- Grand Theft Auto V
+- VALORANT.
+- Counter-Strike 2.
+- Apex Legends.
+- Overwatch 2.
+- Rainbow Six Siege.
+- Fortnite.
+- Call of Duty: Warzone.
+- Battlefield 2042.
+- PUBG: Battlegrounds.
+- Destiny 2.
+- Grand Theft Auto V.
 
 ## Features
 
-- Convert sensitivity settings between any supported games
-- Modern, responsive gaming-themed UI
-- Real-time conversion
-- Supports decimal sensitivity values
-- Game information cards
+- Convert sensitivity settings between any supported games.
+- Modern, responsive gaming-themed UI.
+- Real-time conversion.
+- Supports decimal sensitivity values.
+- Game information cards.
 
 ## How It Works
 
@@ -30,9 +30,8 @@ The converter uses the cm/360° method to ensure accurate sensitivity conversion
 
 ## Technical Details
 
-- **Frontend**: Vanilla JavaScript with plain CSS for styling
-- **Backend**: Node.js with Express for serving static files
-- **No database required**: All conversion factors are stored in the frontend code
+- **Frontend**: Vanilla JavaScript with plain CSS.
+- **Backend**: Node.js with Express.
 
 ## License
 
