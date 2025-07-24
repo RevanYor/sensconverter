@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Sensitivity Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen font-['Roboto']">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8 text-gaming-blue">Gaming Sensitivity Converter</h1>
+        
+        <div class="max-w-2xl mx-auto bg-gray-800 rounded-lg p-6 shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Source Game -->
+                <div>
+                    <label class="block text-sm font-medium mb-2">Source Game</label>
+                    <select id="sourceGame" class="w-full bg-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gaming-blue">
+                        <option value="">Select Game</option>
+                    </select>
+                    <div class="mt-4">
+                        <label class="block text-sm font-medium mb-2">Source Sensitivity</label>
+                        <input type="number" id="sourceSens" class="w-full bg-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gaming-blue" step="0.001">
+                    </div>
+                </div>
+
+                <!-- Target Game -->
+                <div>
+                    <label class="block text-sm font-medium mb-2">Target Game</label>
+                    <select id="targetGame" class="w-full bg-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gaming-blue">
+                        <option value="">Select Game</option>
+                    </select>
+                    <div class="mt-4">
+                        <label class="block text-sm font-medium mb-2">Converted Sensitivity</label>
+                        <input type="number" id="targetSens" class="w-full bg-gray-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gaming-blue" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="convertBtn" class="w-full mt-6 bg-gaming-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors">
+                Convert Sensitivity
+            </button>
+        </div>
+
+        <!-- Game List -->
+        <div class="mt-8 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Supported Games</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="gameList">
+                <!-- Game list will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/converter.js"></script>
+</body>
+</html>
