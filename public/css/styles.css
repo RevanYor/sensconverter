@@ -92,19 +92,33 @@
   cursor: pointer;
   font-weight: bold;
   box-shadow: 0 4px 12px rgba(26,9,62,0.22);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   letter-spacing: 0.5px;
 }
 #convertBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(26,9,62,0.32);
+  box-shadow: 0 0 10px #8a6bbd;
   background: linear-gradient(135deg, #8a6bbd 0%, #23124b 100%);
 }
 #convertBtn:active {
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(26,9,62,0.22);
 }
-
+.coffee-link {
+  text-align: center;
+  margin-top: 1rem;
+  
+}
+.coffee-link a {
+  color: #8a6bbd;
+  text-align: center;
+  margin-top: 1rem;
+}
+.coffee-link a:hover {
+  color: #e5e1ef;
+  text-shadow: 0 0 10px #e5e1ef;
+  transition: all 0.1s ease;
+}
 .games-section {
   margin-top: 2rem;
   max-width: 700px;
@@ -137,6 +151,10 @@
   padding: 1rem;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(10,6,16,0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 .game-title {
   font-size: 1.25rem;
@@ -172,15 +190,10 @@
 }
 .tip-desc {
   color: #a18acb;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  padding: 1rem 0 0.5rem 0;
+  align-self: center;
 }
 .tip-list {
   color: #e5e1ef;
-  margin-left: 1rem;
-  margin-bottom: 0;
-  padding-left: 1rem;
 }
 .footer {
   width: 100%;

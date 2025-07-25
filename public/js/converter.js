@@ -2,57 +2,57 @@
 const games = {
     'valorant': {
         name: 'VALORANT',
-        description: 'Tactical 5v5 shooter by Riot Games',
+        description: 'Tactical 5v5 shooter by Riot Games.',
         baseCM360: 360 / 0.07, // cm/360 at sensitivity 1
     },
     'csgo2': {
         name: 'Counter-Strike 2',
-        description: 'Valve\'s iconic tactical shooter',
+        description: 'Valve\'s iconic tactical shooter.',
         baseCM360: 360 / 0.022, // cm/360 at sensitivity 1
     },
     'apex': {
         name: 'Apex Legends',
-        description: 'Battle Royale by Respawn Entertainment',
+        description: 'Battle Royale by Respawn Entertainment.',
         baseCM360: 360 / 0.022, // Uses Source engine sensitivity
     },
     'overwatch2': {
         name: 'Overwatch 2',
-        description: 'Team-based shooter by Blizzard',
+        description: 'Team-based shooter by Blizzard.',
         baseCM360: 360 / 0.0066, // cm/360 at sensitivity 1
     },
     'r6siege': {
         name: 'Rainbow Six Siege',
-        description: 'Tactical team shooter by Ubisoft',
+        description: 'Tactical team shooter by Ubisoft.',
         baseCM360: 360 / 0.00572, // cm/360 at sensitivity 1
     },
     'fortnite': {
         name: 'Fortnite',
-        description: 'Battle Royale by Epic Games',
+        description: 'Battle Royale by Epic Games.',
         baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
     },
     'warzone': {
         name: 'Call of Duty: Warzone',
-        description: 'Battle Royale in the Call of Duty universe',
+        description: 'Battle Royale in the Call of Duty universe.',
         baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
     },
     'battlefield': {
         name: 'Battlefield 2042',
-        description: 'Large-scale warfare by DICE',
+        description: 'Large-scale warfare by DICE.',
         baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
     },
     'pubg': {
         name: 'PUBG: Battlegrounds',
-        description: 'Original Battle Royale game',
+        description: 'Original Battle Royale game.',
         baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
     },
     'destiny2': {
         name: 'Destiny 2',
-        description: 'MMO shooter by Bungie',
+        description: 'MMO shooter by Bungie.',
         baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
     },
     'gtav': {
         name: 'Grand Theft Auto V',
-        description: 'Open world action game by Rockstar Games',
+        description: 'Open world action game by Rockstar Games.',
         baseCM360: 360 / 0.0555, // cm/360 at sensitivity 1
     }
 };
