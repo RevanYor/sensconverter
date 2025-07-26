@@ -8,6 +8,12 @@
   font-style: normal;
 }
 
+html {
+  background-color: #12062a;
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   width: 100%;
   max-width: 1024px;
